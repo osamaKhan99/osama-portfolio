@@ -1,4 +1,18 @@
 // Mock data for portfolio
+import spockImage from "./src/assets/1-BHLPKaBJ.png";
+import meshImage from "./src/assets/1-C5NbyRXc.png";
+import blackmirrorImage from "./src/assets/1-BMDQ.png";
+import bomefersImage from "./src/assets/2-BNFTPL.png";
+import luminaImage from "./src/assets/1-7LbflqnS.png";
+import meyImage from "./src/assets/1-MNLG.png";
+import gngimImage from "./src/assets/1-BMA.png";
+import nebulaImage from "./src/assets/2-D0ufIKOF.png";
+import starsImage from "./src/assets/1-STGA.png";
+import grandCityImage from "./src/assets/2-BMOWP.png";
+import petLifeImage from "./src/assets/1-Dm29USWH.png";
+import gizmoPortalImage from "./src/assets/1-CaHK311s.png";
+import jobsterXImage from "./src/assets/1-JBX765.png";
+import Avatar from "./src/assets/osama-caricature-bg.png";
 
 export const personalInfo = {
   name: "Osama Waseem",
@@ -10,7 +24,7 @@ export const personalInfo = {
   experience: "5+ years",
   email: "osama021khan@gmail.com",
   location: "Karachi, Pakistan",
-  avatar: "./src/assets/osama-caricature-bg.png"
+  avatar: Avatar
 };
 
 export const about = {
@@ -81,7 +95,7 @@ export const projects = [
     id: 1,
     title: "Spock Analytics",
     description: "Spock is a Web3 analytics platform that helps projects leverage on-chain and off-chain data to understand users, run engagement campaigns, and track growth metrics. It enables teams to discover ideal users, improve conversion and retention, and make data-driven decisions for scaling their products.",
-    image: "./src/assets/1-BHLPKaBJ.png",
+    image: spockImage,
     technologies: ["React", "NestJs", "PostgreSQL", "Analytics", "Charts"],
     liveLink: "https://app.spockanalytics.xyz",
     category: "SaaS"
@@ -90,7 +104,7 @@ export const projects = [
     id: 2,
     title: "Mesh",
     description: "Mesh is a liquidity and asset management protocol built on the Solana ecosystem, enabling users to swap, stake, and track performance through competitive leaderboards. Powered by the Jupiter Aggregator, Mesh delivers optimized trade execution while providing tools to manage and grow digital assets efficiently within a single platform.",
-    image: "./src/assets/1-C5NbyRXc.png",
+    image: meshImage,
     technologies: ["React", "Web3", "Solana", "Swap", "Stake"],
     liveLink: "https://swap.meshprotocol.xyz/swap",
     category: "Web3"
@@ -99,7 +113,7 @@ export const projects = [
     id: 3,
     title: "Blackmirror Social App",
     description: "Social Dashboard for Black Mirror Web Series to complete the social network tasks added by admin to earn some points",
-    image: "./src/assets/1-BMDQ.png",
+    image: blackmirrorImage,
     technologies: ["Next.Js", "TypeScript", "Social", "Quests", "Netflix"],
     liveLink: "https://black-mirror-interface.vercel.app",
     category: "Social"
@@ -108,7 +122,7 @@ export const projects = [
     id: 4,
     title: "Bomefers",
     description: "Bomefers is a Web3 platform that lets users create and personalize NFTs by customizing traits, styles, and visual elements in real time. Users can connect their wallets, modify NFT attributes, preview unique designs, and mint or trade their customized assets directly on the blockchain.",
-    image: "./src/assets/2-BNFTPL.png",
+    image: bomefersImage,
     technologies: ["Next.Js", "TypeScipt", "NFT", "EVM"],
     liveLink: "https://bomefers.com/home",
     category: "NFT"
@@ -117,7 +131,7 @@ export const projects = [
     id: 5,
     title: "Lumina Dex (Solis)",
     description: "Lumina is a next-generation decentralized exchange designed for fast, secure, and low-cost crypto trading on MINA network.",
-    image: "./src/assets/1-7LbflqnS.png",
+    image: luminaImage,
     technologies: ["Next.Js", "TypeScipt", "Dex", "Mina", "Web3"],
     liveLink: "https://solis.gizmolab.io",
     category: "Web3"
@@ -126,7 +140,7 @@ export const projects = [
     id: 6,
     title: "Mey Network",
     description: "Landing Page for a RWA, a Web3 platform for tokenizing and managing real-world assets, enabling users to invest, trade, and track asset backed tokens securely.",
-    image: "./src/assets/1-MNLG.png",
+    image: meyImage,
     technologies: ["NextJs", "TypeScript", "Three.js", "Web3", "RWA"],
     liveLink: "https://mey.network",
     category: "Web3"
@@ -135,7 +149,7 @@ export const projects = [
     id: 7,
     title: "GNGIM",
     description: "A blockchain-based asset management tool that allows you to monitor, organize, and track the performance of your digital and tokenized assets seamlessly.",
-    image: "./src/assets/1-BMA.png",
+    image: gngimImage,
     technologies: ["NextJs", "Web3", "TypeScript", "Crypto"],
     liveLink: "https://bam.pngvntoken.com/",
     category: "Web3"
@@ -144,7 +158,7 @@ export const projects = [
     id: 8,
     title: "Nebula",
     description: "A comprehensive tool for tracking on-chain/off-chain activities and managing campaigns, enabling users to monitor performance, analyze engagement, and optimize strategies.",
-    image: "./src/assets/2-D0ufIKOF.png",
+    image: nebulaImage,
     technologies: ["Next.Js", "TypeScript", "MongoDB", "TailwindCSS"],
     liveLink: "https://app.nebula-agency.com/signin",
     category: "Web3"
@@ -153,7 +167,7 @@ export const projects = [
     id: 9,
     title: "Stars Mini App",
     description: "Telegram Mini App, a game where you can play with your friends online and fight against others through battle simulations",
-    image: "./src/assets/1-STGA.png",
+    image: starsImage,
     technologies: ["React.Js", "TypeScript", "Telegram Mini App", "Game"],
     liveLink: "https://t.me/stars_mini_bot",
     category: "Game"
@@ -162,7 +176,7 @@ export const projects = [
     id: 10,
     title: "Grand City",
     description: "Grand City is a Telegram Mini App game where players can build and grow their businesses, generate revenue, and expand their empire. Progress through seasons by completing engaging, themed tasks inspired by Trailer Park Boys.",
-    image: "./src/assets/2-BMOWP.png",
+    image: grandCityImage,
     technologies: ["React", "NestJs", "Telegram", "TypeScript", "PostgreSQL"],
     liveLink: "https://t.me/grand_city_test_bot",
     category: "Game"
@@ -171,7 +185,7 @@ export const projects = [
     id: 11,
     title: "Pet Life",
     description: "The digital realm where the joy of pet companionship meets the thrill of gaming in a community-driven universe",
-    image: "./src/assets/1-Dm29USWH.png",
+    image: petLifeImage,
     technologies: ["Next.Js", "TypeScript", "GSAP"],
     liveLink: "https://pet-life-chi.vercel.app/",
     category: "Website"
@@ -180,7 +194,7 @@ export const projects = [
     id: 12,
     title: "Gizmo Portal",
     description: "A Digital Portal where you can find tools for Web3 and data for related web3 VCs and investors.",
-    image: "./src/assets/1-CaHK311s.png",
+    image: gizmoPortalImage,
     technologies: ["Next.Js", "TypeScript", "Ethereum"],
     liveLink: "https://portal.gizmolab.io/",
     category: "SaaS"
@@ -189,12 +203,13 @@ export const projects = [
     id: 13,
     title: "JobsterX",
     description: "JobsterX is an all in one career platform where users create a profile and the system handles everything from resume building and mock interviews to job applications.",
-    image: "./src/assets/1-JBX765.png",
+    image: jobsterXImage,
     technologies: ["React.Js", "Node.js", "AI"],
     liveLink: "https://portal.jobsterx.com",
     category: "SaaS"
   },
 ];
+
 
 export const certifications = [
   {
