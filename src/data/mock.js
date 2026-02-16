@@ -1,18 +1,18 @@
 // Mock data for portfolio
-import spockImage from "./src/assets/1-BHLPKaBJ.png";
-import meshImage from "./src/assets/1-C5NbyRXc.png";
-import blackmirrorImage from "./src/assets/1-BMDQ.png";
-import bomefersImage from "./src/assets/2-BNFTPL.png";
-import luminaImage from "./src/assets/1-7LbflqnS.png";
-import meyImage from "./src/assets/1-MNLG.png";
-import gngimImage from "./src/assets/1-BMA.png";
-import nebulaImage from "./src/assets/2-D0ufIKOF.png";
-import starsImage from "./src/assets/1-STGA.png";
-import grandCityImage from "./src/assets/2-BMOWP.png";
-import petLifeImage from "./src/assets/1-Dm29USWH.png";
-import gizmoPortalImage from "./src/assets/1-CaHK311s.png";
-import jobsterXImage from "./src/assets/1-JBX765.png";
-import Avatar from "./src/assets/osama-caricature-bg.png";
+import spockImage from "../assets/1-BHLPKaBJ.png";
+import meshImage from "../assets/1-C5NbyRXc.png";
+import blackmirrorImage from "../assets/1-BMDQ.png";
+import bomefersImage from "../assets/2-BNFTPL.png";
+import luminaImage from "../assets/1-7LbflqnS.png";
+import meyImage from "../assets/1-MNLG.png";
+import gngimImage from "../assets/1-BMA.png";
+import nebulaImage from "../assets/2-D0ufIKOF.png";
+import starsImage from "../assets/1-STGA.png";
+import grandCityImage from "../assets/2-BMOWP.png";
+import petLifeImage from "../assets/1-Dm29USWH.png";
+import gizmoPortalImage from "../assets/1-CaHK311s.png";
+import jobsterXImage from "../assets/1-JBX765.png";
+import Avatar from "../assets/osama-caricature-bg.png";
 
 export const personalInfo = {
   name: "Osama Waseem",
