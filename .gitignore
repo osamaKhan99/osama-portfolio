@@ -1,9 +1,10 @@
-# Node dependencies
+
+
+node_modules
 node_modules/
 .pnp/
 .pnp.js
 
-# Logs
 logs
 *.log
 npm-debug.log*
@@ -11,7 +12,6 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Build outputs
 dist/
 .build/
 out/
@@ -22,22 +22,22 @@ out/
 .env.test.local
 .env.production.local
 
-# Environment files
+
 .env
 .env.*.local
 
-# OS files
+
 .DS_Store
 Thumbs.db
 
-# IDE files
+
 .vscode/
 .idea/
 
-# Optional: Netlify cache
+
 .netlify/
 
-# Optional: package lock
+
 package-lock.json
 yarn.lock
 pnpm-lock.yaml
