@@ -11,7 +11,7 @@ const Projects = ({ projects }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section id="projects" className="py-20 bg-black relative overflow-hidden">
+    <section id="projects" className="py-20 bg-gradient-to-b from-gray-900 to-black relative overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl animate-pulse" />
@@ -122,12 +122,12 @@ const Projects = ({ projects }) => {
                         <h3 className="text-3xl font-bold text-white group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-cyan-400 group-hover:to-purple-400 group-hover:bg-clip-text transition-all duration-500 flex-1">
                           {project.title}
                         </h3>
-                        <div className="ml-4 opacity-0 group-hover:opacity-100 transform translate-x-4 group-hover:translate-x-0 transition-all duration-500">
+                        {/* <div className="ml-4 opacity-0 group-hover:opacity-100 transform translate-x-4 group-hover:translate-x-0 transition-all duration-500">
                           <ArrowRight className="w-6 h-6 text-cyan-400" />
-                        </div>
+                        </div> */}
                       </div>
                       
-                      <p className="text-gray-400 mb-6 line-clamp-3 leading-relaxed group-hover:text-gray-300 transition-colors duration-300">
+                      <p className="text-gray-400 mb-6 line-clamp-4 leading-relaxed group-hover:text-gray-300 transition-colors duration-300">
                         {project.description}
                       </p>
 
@@ -314,31 +314,32 @@ const Projects = ({ projects }) => {
         .projects-swiper .swiper-slide-active {
           z-index: 10;
         }
+        .projects-swiper .swiper-button-next,
+.projects-swiper .swiper-button-prev {
+  width: 40px;
+  height: 40px;
+}
+
+.projects-swiper .swiper-button-next::after,
+.projects-swiper .swiper-button-prev::after {
+  font-size: 16px;
+}
+
 
         .projects-swiper .swiper-button-next,
-        .projects-swiper .swiper-button-prev {
-          color: #22d3ee;
-          background: rgba(0, 0, 0, 0.5);
-          backdrop-filter: blur(10px);
-          width: 50px;
-          height: 50px;
-          border-radius: 50%;
-          border: 1px solid rgba(34, 211, 238, 0.3);
-          transition: all 0.3s ease;
-        }
+.projects-swiper .swiper-button-prev {
+  background: linear-gradient(135deg,#22d3ee,#a855f7);
+  color: black;
+  border: none;
+  box-shadow: 0 0 25px rgba(34,211,238,.7);
+  padding: 8px;
+}
 
-        .projects-swiper .swiper-button-next:hover,
-        .projects-swiper .swiper-button-prev:hover {
-          background: rgba(34, 211, 238, 0.2);
-          border-color: #22d3ee;
-          transform: scale(1.1);
-        }
+.projects-swiper .swiper-button-next:hover,
+.projects-swiper .swiper-button-prev:hover {
+  box-shadow: 0 0 40px rgba(168,85,247,.9);
+}
 
-        .projects-swiper .swiper-button-next::after,
-        .projects-swiper .swiper-button-prev::after {
-          font-size: 20px;
-          font-weight: bold;
-        }
 
         .projects-swiper .swiper-pagination-bullet {
           background: #4b5563;

@@ -1,18 +1,3 @@
-// Mock data for portfolio
-import spockImage from "../assets/1-BHLPKaBJ.png";
-import meshImage from "../assets/1-C5NbyRXc.png";
-import blackmirrorImage from "../assets/1-BMDQ.png";
-import bomefersImage from "../assets/2-BNFTPL.png";
-import luminaImage from "../assets/1-7LbflqnS.png";
-import meyImage from "../assets/1-MNLG.png";
-import gngimImage from "../assets/1-BMA.png";
-import nebulaImage from "../assets/2-D0ufIKOF.png";
-import starsImage from "../assets/1-STGA.png";
-import grandCityImage from "../assets/2-BMOWP.png";
-import petLifeImage from "../assets/1-Dm29USWH.png";
-import gizmoPortalImage from "../assets/1-CaHK311s.png";
-import jobsterXImage from "../assets/1-JBX765.png";
-import Avatar from "../assets/osama-caricature-bg.png";
 
 export const personalInfo = {
   name: "Osama Waseem",
@@ -24,7 +9,7 @@ export const personalInfo = {
   experience: "5+ years",
   email: "osama021khan@gmail.com",
   location: "Karachi, Pakistan",
-  avatar: Avatar
+  avatar: "https://res.cloudinary.com/diyuydtzl/image/upload/v1771325428/osama-caricature-bg_scrp6m.webp"
 };
 
 export const about = {
@@ -95,7 +80,7 @@ export const projects = [
     id: 1,
     title: "Spock Analytics",
     description: "Spock is a Web3 analytics platform that helps projects leverage on-chain and off-chain data to understand users, run engagement campaigns, and track growth metrics. It enables teams to discover ideal users, improve conversion and retention, and make data-driven decisions for scaling their products.",
-    image: spockImage,
+    image: "https://res.cloudinary.com/diyuydtzl/image/upload/v1771325437/1-BHLPKaBJ_bkptui.webp",
     technologies: ["React", "NestJs", "PostgreSQL", "Analytics", "Charts"],
     liveLink: "https://app.spockanalytics.xyz",
     category: "SaaS"
@@ -104,7 +89,7 @@ export const projects = [
     id: 2,
     title: "Mesh",
     description: "Mesh is a liquidity and asset management protocol built on the Solana ecosystem, enabling users to swap, stake, and track performance through competitive leaderboards. Powered by the Jupiter Aggregator, Mesh delivers optimized trade execution while providing tools to manage and grow digital assets efficiently within a single platform.",
-    image: meshImage,
+    image: "https://res.cloudinary.com/diyuydtzl/image/upload/v1771325432/1-C5NbyRXc_thkdw9.webp",
     technologies: ["React", "Web3", "Solana", "Swap", "Stake"],
     liveLink: "https://swap.meshprotocol.xyz/swap",
     category: "Web3"
@@ -113,7 +98,7 @@ export const projects = [
     id: 3,
     title: "Blackmirror Social App",
     description: "Social Dashboard for Black Mirror Web Series to complete the social network tasks added by admin to earn some points",
-    image: blackmirrorImage,
+    image: "https://res.cloudinary.com/diyuydtzl/image/upload/v1771325437/1-BMDQ_wuaw2m.webp",
     technologies: ["Next.Js", "TypeScript", "Social", "Quests", "Netflix"],
     liveLink: "https://black-mirror-interface.vercel.app",
     category: "Social"
@@ -122,7 +107,7 @@ export const projects = [
     id: 4,
     title: "Bomefers",
     description: "Bomefers is a Web3 platform that lets users create and personalize NFTs by customizing traits, styles, and visual elements in real time. Users can connect their wallets, modify NFT attributes, preview unique designs, and mint or trade their customized assets directly on the blockchain.",
-    image: bomefersImage,
+    image: "https://res.cloudinary.com/diyuydtzl/image/upload/v1771325429/2-BNFTPL_celq6a.webp",
     technologies: ["Next.Js", "TypeScipt", "NFT", "EVM"],
     liveLink: "https://bomefers.com/home",
     category: "NFT"
@@ -131,7 +116,7 @@ export const projects = [
     id: 5,
     title: "Lumina Dex (Solis)",
     description: "Lumina is a next-generation decentralized exchange designed for fast, secure, and low-cost crypto trading on MINA network.",
-    image: luminaImage,
+    image: "https://res.cloudinary.com/diyuydtzl/image/upload/v1771325439/1-7LbflqnS_tzzt7q.webp",
     technologies: ["Next.Js", "TypeScipt", "Dex", "Mina", "Web3"],
     liveLink: "https://solis.gizmolab.io",
     category: "Web3"
@@ -140,7 +125,7 @@ export const projects = [
     id: 6,
     title: "Mey Network",
     description: "Landing Page for a RWA, a Web3 platform for tokenizing and managing real-world assets, enabling users to invest, trade, and track asset backed tokens securely.",
-    image: meyImage,
+    image: "https://res.cloudinary.com/diyuydtzl/image/upload/v1771325432/1-MNLG_umt0c4.webp",
     technologies: ["NextJs", "TypeScript", "Three.js", "Web3", "RWA"],
     liveLink: "https://mey.network",
     category: "Web3"
@@ -149,16 +134,16 @@ export const projects = [
     id: 7,
     title: "GNGIM",
     description: "A blockchain-based asset management tool that allows you to monitor, organize, and track the performance of your digital and tokenized assets seamlessly.",
-    image: gngimImage,
+    image: "https://res.cloudinary.com/diyuydtzl/image/upload/v1771325436/1-BMA_ggxu24.webp",
     technologies: ["NextJs", "Web3", "TypeScript", "Crypto"],
-    liveLink: "https://bam.pngvntoken.com/",
+    liveLink: "https://bam.webpvntoken.com/",
     category: "Web3"
   },
   {
     id: 8,
     title: "Nebula",
     description: "A comprehensive tool for tracking on-chain/off-chain activities and managing campaigns, enabling users to monitor performance, analyze engagement, and optimize strategies.",
-    image: nebulaImage,
+    image: "https://res.cloudinary.com/diyuydtzl/image/upload/v1771325430/2-D0ufIKOF_zwpsjo.webp",
     technologies: ["Next.Js", "TypeScript", "MongoDB", "TailwindCSS"],
     liveLink: "https://app.nebula-agency.com/signin",
     category: "Web3"
@@ -167,7 +152,7 @@ export const projects = [
     id: 9,
     title: "Stars Mini App",
     description: "Telegram Mini App, a game where you can play with your friends online and fight against others through battle simulations",
-    image: starsImage,
+    image: "https://res.cloudinary.com/diyuydtzl/image/upload/v1771325430/1-STGA_gzrivv.webp",
     technologies: ["React.Js", "TypeScript", "Telegram Mini App", "Game"],
     liveLink: "https://t.me/stars_mini_bot",
     category: "Game"
@@ -176,7 +161,7 @@ export const projects = [
     id: 10,
     title: "Grand City",
     description: "Grand City is a Telegram Mini App game where players can build and grow their businesses, generate revenue, and expand their empire. Progress through seasons by completing engaging, themed tasks inspired by Trailer Park Boys.",
-    image: grandCityImage,
+    image: "https://res.cloudinary.com/diyuydtzl/image/upload/v1771325440/2-BMOWP_f7osyo.webp",
     technologies: ["React", "NestJs", "Telegram", "TypeScript", "PostgreSQL"],
     liveLink: "https://t.me/grand_city_test_bot",
     category: "Game"
@@ -185,7 +170,7 @@ export const projects = [
     id: 11,
     title: "Pet Life",
     description: "The digital realm where the joy of pet companionship meets the thrill of gaming in a community-driven universe",
-    image: petLifeImage,
+    image: "https://res.cloudinary.com/diyuydtzl/image/upload/v1771325432/1-Dm29USWH_nnekj0.webp",
     technologies: ["Next.Js", "TypeScript", "GSAP"],
     liveLink: "https://pet-life-chi.vercel.app/",
     category: "Website"
@@ -194,7 +179,7 @@ export const projects = [
     id: 12,
     title: "Gizmo Portal",
     description: "A Digital Portal where you can find tools for Web3 and data for related web3 VCs and investors.",
-    image: gizmoPortalImage,
+    image: "https://res.cloudinary.com/diyuydtzl/image/upload/v1771325433/1-CaHK311s_dfwlwz.webp",
     technologies: ["Next.Js", "TypeScript", "Ethereum"],
     liveLink: "https://portal.gizmolab.io/",
     category: "SaaS"
@@ -203,7 +188,7 @@ export const projects = [
     id: 13,
     title: "JobsterX",
     description: "JobsterX is an all in one career platform where users create a profile and the system handles everything from resume building and mock interviews to job applications.",
-    image: jobsterXImage,
+    image: "https://res.cloudinary.com/diyuydtzl/image/upload/v1771325430/1-JBX765_vfih1l.webp",
     technologies: ["React.Js", "Node.js", "AI"],
     liveLink: "https://portal.jobsterx.com",
     category: "SaaS"

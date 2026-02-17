@@ -7,33 +7,33 @@ const Footer = ({ personalInfo, socialLinks }) => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer id='contact' className="border-t border-gray-800 py-8 bg-gradient-to-b from-black to-gray-900">
+    <footer id='contact' className="border-t border-gray-800 py-8 bg-gradient-to-b from-gray-900 to-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="space-y-8 flex justify-between">
-            <div className='flex justify-between w-full'>
+            <div className='flex flex-col md:flex-row justify-between gap-8 w-full'>
             <div>
-              <h3 className="text-xl font-bold text-white mb-6">Contact Information</h3>
+              <h3 className="text-base md:text-xl font-bold text-white mb-6">Contact Information</h3>
               
               <div className="space-y-4">
                 <div className="flex items-center gap-4 text-gray-300">
-                  <div className="bg-cyan-400 p-3 rounded-lg">
-                    <Mail className="w-6 h-6 text-black" />
+                  <div className="bg-cyan-400 p-2 md:p-3 rounded-lg">
+                    <Mail className="w-4 h-4 md:w-6 md:h-6 text-black" />
                   </div>
                   <div>
                     <p className="text-sm text-gray-400">Email</p>
-                    <a href={`mailto:${personalInfo.email}`} className="text-lg hover:text-cyan-400 transition-colors">
+                    <a href={`mailto:${personalInfo.email}`} className="text-sm md:text-lg hover:text-cyan-400 transition-colors">
                       {personalInfo.email}
                     </a>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-4 text-gray-300">
-                  <div className="bg-purple-400 p-3 rounded-lg">
-                    <MapPin className="w-6 h-6 text-black" />
+                  <div className="bg-purple-400 p-2 md:p-3 rounded-lg">
+                    <MapPin className="w-4 h-4 md:w-6 md:h-6 text-black" />
                   </div>
                   <div>
                     <p className="text-sm text-gray-400">Location</p>
-                    <p className="text-lg">{personalInfo.location}</p>
+                    <p className="text-sm md:text-lg">{personalInfo.location}</p>
                   </div>
                 </div>
               </div>
@@ -41,7 +41,7 @@ const Footer = ({ personalInfo, socialLinks }) => {
 
             {/* Social Links */}
             <div>
-              <h3 className="text-xl font-bold text-white mb-6">Connect With Me</h3>
+              <h3 className="text-base md:text-xl font-bold text-white mb-6">Connect With Me</h3>
               <div className="flex gap-4">
                 {socialLinks.map((social) => {
                   const IconComponent = LucideIcons[social.icon.charAt(0).toUpperCase() + social.icon.slice(1)] || Mail;
@@ -51,10 +51,10 @@ const Footer = ({ personalInfo, socialLinks }) => {
                       href={social.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-gray-900 border border-gray-800 p-4 rounded-lg hover:border-cyan-400 hover:bg-gray-800 transition-all duration-300 hover:scale-110 group"
+                      className="bg-gray-900 border border-gray-800 p-2 md:p-4 rounded-lg hover:border-cyan-400 hover:bg-gray-800 transition-all duration-300 hover:scale-110 group"
                       title={social.name}
                     >
-                      <IconComponent className="w-6 h-6 text-gray-400 group-hover:text-cyan-400 transition-colors" />
+                      <IconComponent className="w-4 h-4 md:w-6 md:h-6 text-gray-400 group-hover:text-cyan-400 transition-colors" />
                     </a>
                   );
                 })}
