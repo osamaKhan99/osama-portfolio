@@ -1,6 +1,7 @@
 import React from 'react';
-import { Mail, MapPin, Send, Heart } from 'lucide-react';
+import { Mail, MapPin, Heart } from 'lucide-react';
 import * as LucideIcons from 'lucide-react';
+import CopyText from './ui/copy';
 
 
 const Footer = ({ personalInfo, socialLinks }) => {
@@ -25,6 +26,7 @@ const Footer = ({ personalInfo, socialLinks }) => {
                       {personalInfo.email}
                     </a>
                   </div>
+                  <CopyText text={personalInfo.email} />
                 </div>
 
                 <div className="flex items-center gap-4 text-gray-300">
