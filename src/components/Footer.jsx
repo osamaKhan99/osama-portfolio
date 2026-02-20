@@ -10,18 +10,15 @@ const Footer = ({ personalInfo, socialLinks }) => {
   return (
     <footer id='contact' className="border-t border-gray-800 py-8 bg-gradient-to-b from-gray-900 to-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="space-y-8 flex justify-between">
-            <div className='flex flex-col md:flex-row justify-between gap-8 w-full'>
+        <div className="space-y-8 flex justify-between">
+          <div className='flex flex-col md:flex-row justify-between gap-8 w-full'>
             <div>
-              <h3 className="text-base md:text-xl font-bold text-white mb-6">Contact Information</h3>
-              
+              <h3 className="text-base md:text-xl font-bold text-white mb-6">Contact</h3>
+
               <div className="space-y-4">
                 <div className="flex items-center gap-4 text-gray-300">
-                  <div className="bg-cyan-400 p-2 md:p-3 rounded-lg">
-                    <Mail className="w-4 h-4 md:w-6 md:h-6 text-black" />
-                  </div>
+                  <Mail className="w-4 h-4 md:w-6 md:h-6 text-gray-400" />
                   <div>
-                    <p className="text-sm text-gray-400">Email</p>
                     <a href={`mailto:${personalInfo.email}`} className="text-sm md:text-lg hover:text-cyan-400 transition-colors">
                       {personalInfo.email}
                     </a>
@@ -29,13 +26,12 @@ const Footer = ({ personalInfo, socialLinks }) => {
                   <CopyText text={personalInfo.email} />
                 </div>
 
-                <div className="flex items-center gap-4 text-gray-300">
-                  <div className="bg-purple-400 p-2 md:p-3 rounded-lg">
-                    <MapPin className="w-4 h-4 md:w-6 md:h-6 text-black" />
-                  </div>
-                  <div>
-                    <p className="text-sm text-gray-400">Location</p>
-                    <p className="text-sm md:text-lg">{personalInfo.location}</p>
+                <div>
+                  <div className="flex items-center gap-3 ml-1">
+                    <div className="w-3 h-3 rounded-full bg-green-400 animate-pulse" />
+                    <p className="text-sm font-medium text-green-500">
+                      Available for remote or onsite roles and open to relocation
+                    </p>
                   </div>
                 </div>
               </div>
@@ -62,21 +58,8 @@ const Footer = ({ personalInfo, socialLinks }) => {
                 })}
               </div>
             </div>
-            </div>
-
-            {/* CTA Box */}
-            {/* <div className="bg-gradient-to-br from-cyan-400 to-purple-400 rounded-2xl p-8 text-black">
-              <h4 className="text-2xl font-bold mb-3">Ready to Start?</h4>
-              <p className="mb-6">Let's discuss your project and see how I can help bring your vision to reality.</p>
-              <a
-                href={`mailto:${personalInfo.email}`}
-                className="inline-flex items-center gap-2 px-6 py-3 bg-black text-white font-semibold rounded-lg hover:bg-gray-900 transition-all duration-300 hover:scale-105"
-              >
-                <Send size={20} />
-                Send Email
-              </a>
-            </div> */}
           </div>
+        </div>
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 mt-8">
           <div className="text-gray-400 text-center md:text-left">
             <p className="flex items-center gap-2 justify-center md:justify-start">

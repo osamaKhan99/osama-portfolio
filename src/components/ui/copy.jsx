@@ -12,7 +12,7 @@ const CopyText = ({ text }) => {
   };
 
   return (
-    <button onClick={handleCopy} className="mt-6">
+    <button onClick={handleCopy}>
       {copied ? (
         <CopyCheck className="w-4 h-4 text-green-500" />
       ) : (

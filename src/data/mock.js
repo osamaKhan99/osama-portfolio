@@ -299,9 +299,4 @@ export const socialLinks = [
     url: "https://x.com/iOsama99",
     icon: "twitter"
   },
-  {
-    name: "Email",
-    url: "mailto:osama021khan@gmail.com",
-    icon: "mail"
-  }
 ];
